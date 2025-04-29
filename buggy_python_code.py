@@ -34,6 +34,8 @@ def fetch_website(urllib_version, url):
     try:
         http = urllib.PoolManager()
         r = http.request('GET', url)
+        
+        return r
     except:
         print('Exception')
 
